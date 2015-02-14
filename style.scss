@@ -13,13 +13,24 @@ $darkGray: #979797;
 /***************** general styles *****************/
 /**************************************************/
 
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
 body {
 	text-align: center;
-	font-family: Helvetica, sans-serif;
-	color: #938F8D;
+	font-family: "Gotham Rounded", Helvetica, sans-serif;
+	color: $main;
 	max-width: 700px;
 	margin: 0 auto;
 	padding: 20px;
+}
+
+a {
+	color: $orange;
+	text-decoration: none;
 }
 
 .logo {
